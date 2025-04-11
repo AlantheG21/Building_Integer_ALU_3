@@ -1,0 +1,483 @@
+$date
+	Thu Apr 10 23:34:27 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module test_alu_arithmetic $end
+$var wire 4 ! result [3:0] $end
+$var wire 4 " left_over [3:0] $end
+$var wire 1 # carry_out $end
+$var reg 4 $ A [3:0] $end
+$var reg 4 % B [3:0] $end
+$var reg 1 & carry_in $end
+$var reg 3 ' opcode [2:0] $end
+$scope module uut $end
+$var wire 4 ( A [3:0] $end
+$var wire 4 ) B [3:0] $end
+$var wire 1 & carry_in $end
+$var wire 3 * opcode [2:0] $end
+$var reg 1 # carry_out $end
+$var reg 4 + left_over [3:0] $end
+$var reg 4 , result [3:0] $end
+$upscope $end
+$upscope $end
+$scope module test_alu_top $end
+$var wire 4 - secondary_out [3:0] $end
+$var wire 4 . result [3:0] $end
+$var wire 1 / carry_out $end
+$var reg 4 0 A [3:0] $end
+$var reg 4 1 B [3:0] $end
+$var reg 1 2 carry_in $end
+$var reg 4 3 opcode [3:0] $end
+$scope module uut $end
+$var wire 4 4 A [3:0] $end
+$var wire 4 5 B [3:0] $end
+$var wire 1 2 carry_in $end
+$var wire 4 6 opcode [3:0] $end
+$var wire 4 7 xor_out [3:0] $end
+$var wire 4 8 xnor_out [3:0] $end
+$var wire 4 9 shift_result [3:0] $end
+$var wire 4 : shift_overflow [3:0] $end
+$var wire 4 ; or_out [3:0] $end
+$var wire 4 < not_out [3:0] $end
+$var wire 4 = nor_out [3:0] $end
+$var wire 4 > nand_out [3:0] $end
+$var wire 4 ? arith_result [3:0] $end
+$var wire 4 @ arith_remainder [3:0] $end
+$var wire 1 A arith_carry_out $end
+$var wire 4 B and_out [3:0] $end
+$var reg 1 / carry_out $end
+$var reg 4 C result [3:0] $end
+$var reg 4 D secondary_out [3:0] $end
+$scope module u_and $end
+$var wire 4 E A [3:0] $end
+$var wire 4 F B [3:0] $end
+$var wire 4 G result [3:0] $end
+$upscope $end
+$scope module u_arith $end
+$var wire 4 H A [3:0] $end
+$var wire 4 I B [3:0] $end
+$var wire 1 2 carry_in $end
+$var wire 3 J opcode [2:0] $end
+$var reg 1 A carry_out $end
+$var reg 4 K left_over [3:0] $end
+$var reg 4 L result [3:0] $end
+$upscope $end
+$scope module u_nand $end
+$var wire 4 M A [3:0] $end
+$var wire 4 N B [3:0] $end
+$var wire 4 O result [3:0] $end
+$upscope $end
+$scope module u_nor $end
+$var wire 4 P A [3:0] $end
+$var wire 4 Q B [3:0] $end
+$var wire 4 R result [3:0] $end
+$upscope $end
+$scope module u_not $end
+$var wire 4 S A [3:0] $end
+$var wire 4 T result [3:0] $end
+$upscope $end
+$scope module u_or $end
+$var wire 4 U A [3:0] $end
+$var wire 4 V B [3:0] $end
+$var wire 4 W result [3:0] $end
+$upscope $end
+$scope module u_shift $end
+$var wire 4 X A [3:0] $end
+$var wire 4 Y B [3:0] $end
+$var reg 4 Z X [3:0] $end
+$var reg 4 [ Y [3:0] $end
+$var reg 4 \ fill_bit [3:0] $end
+$upscope $end
+$scope module u_xnor $end
+$var wire 4 ] A [3:0] $end
+$var wire 4 ^ B [3:0] $end
+$var wire 4 _ result [3:0] $end
+$upscope $end
+$scope module u_xor $end
+$var wire 4 ` A [3:0] $end
+$var wire 4 a B [3:0] $end
+$var wire 4 b result [3:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module test_and $end
+$var wire 4 c Y [3:0] $end
+$var reg 4 d A [3:0] $end
+$var reg 4 e B [3:0] $end
+$scope module uut $end
+$var wire 4 f A [3:0] $end
+$var wire 4 g B [3:0] $end
+$var wire 4 h result [3:0] $end
+$upscope $end
+$upscope $end
+$scope module test_arithmetic_shifter $end
+$var wire 4 i Y [3:0] $end
+$var wire 4 j X [3:0] $end
+$var reg 4 k A [3:0] $end
+$var reg 4 l B [3:0] $end
+$scope module uut $end
+$var wire 4 m A [3:0] $end
+$var wire 4 n B [3:0] $end
+$var reg 4 o X [3:0] $end
+$var reg 4 p Y [3:0] $end
+$var reg 4 q fill_bit [3:0] $end
+$upscope $end
+$upscope $end
+$scope module test_nand $end
+$var wire 4 r Y [3:0] $end
+$var reg 4 s A [3:0] $end
+$var reg 4 t B [3:0] $end
+$scope module uut $end
+$var wire 4 u A [3:0] $end
+$var wire 4 v B [3:0] $end
+$var wire 4 w result [3:0] $end
+$upscope $end
+$upscope $end
+$scope module test_nor $end
+$var wire 4 x Y [3:0] $end
+$var reg 4 y A [3:0] $end
+$var reg 4 z B [3:0] $end
+$scope module uut $end
+$var wire 4 { A [3:0] $end
+$var wire 4 | B [3:0] $end
+$var wire 4 } result [3:0] $end
+$upscope $end
+$upscope $end
+$scope module test_not $end
+$var wire 4 ~ Y [3:0] $end
+$var reg 4 !" A [3:0] $end
+$scope module uut $end
+$var wire 4 "" A [3:0] $end
+$var wire 4 #" result [3:0] $end
+$upscope $end
+$upscope $end
+$scope module test_or $end
+$var wire 4 $" Y [3:0] $end
+$var reg 4 %" A [3:0] $end
+$var reg 4 &" B [3:0] $end
+$scope module uut $end
+$var wire 4 '" A [3:0] $end
+$var wire 4 (" B [3:0] $end
+$var wire 4 )" result [3:0] $end
+$upscope $end
+$upscope $end
+$scope module test_xnor $end
+$var wire 4 *" Y [3:0] $end
+$var reg 4 +" A [3:0] $end
+$var reg 4 ," B [3:0] $end
+$scope module uut $end
+$var wire 4 -" A [3:0] $end
+$var wire 4 ." B [3:0] $end
+$var wire 4 /" result [3:0] $end
+$upscope $end
+$upscope $end
+$scope module test_xor $end
+$var wire 4 0" Y [3:0] $end
+$var reg 4 1" A [3:0] $end
+$var reg 4 2" B [3:0] $end
+$scope module uut $end
+$var wire 4 3" A [3:0] $end
+$var wire 4 4" B [3:0] $end
+$var wire 4 5" result [3:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b101 5"
+b1001 4"
+b1100 3"
+b1001 2"
+b1100 1"
+b101 0"
+b1010 /"
+b1001 ."
+b1100 -"
+b1001 ,"
+b1100 +"
+b1010 *"
+b1111 )"
+b11 ("
+b1100 '"
+b11 &"
+b1100 %"
+b1111 $"
+b11 #"
+b1100 ""
+b1100 !"
+b11 ~
+b100 }
+b1010 |
+b1001 {
+b1010 z
+b1001 y
+b100 x
+b101 w
+b1011 v
+b1010 u
+b1011 t
+b1010 s
+b101 r
+b0 q
+b1 p
+b100 o
+b10 n
+b1010 m
+b10 l
+b1010 k
+b100 j
+b1 i
+b1010 h
+b1011 g
+b1010 f
+b1011 e
+b1010 d
+b1010 c
+b1111 b
+b101 a
+b1010 `
+b0 _
+b101 ^
+b1010 ]
+b0 \
+b1000 [
+b10 Z
+b101 Y
+b1010 X
+b1111 W
+b101 V
+b1010 U
+b101 T
+b1010 S
+b0 R
+b101 Q
+b1010 P
+b1111 O
+b101 N
+b1010 M
+b1111 L
+b0 K
+b0 J
+b101 I
+b1010 H
+b0 G
+b101 F
+b1010 E
+b0 D
+b0 C
+b0 B
+0A
+b0 @
+b1111 ?
+b1111 >
+b0 =
+b101 <
+b1111 ;
+b1000 :
+b10 9
+b0 8
+b1111 7
+b0 6
+b101 5
+b1010 4
+b0 3
+02
+b101 1
+b1010 0
+0/
+b0 .
+b0 -
+b1111 ,
+b0 +
+b0 *
+b101 )
+b1010 (
+b0 '
+0&
+b101 %
+b1010 $
+0#
+b0 "
+b1111 !
+$end
+#10000
+b1100 *"
+b1100 /"
+b0 x
+b0 }
+b1111 r
+b1111 w
+b101 ?
+b101 L
+b11 0"
+b11 5"
+b11 $"
+b11 )"
+b1000 i
+b1000 p
+b1110 j
+b1110 o
+b1111 q
+b0 c
+b0 h
+b1111 .
+b1111 C
+b1 J
+b101 !
+b101 ,
+b11 2"
+b11 4"
+b0 1"
+b0 3"
+b11 ,"
+b11 ."
+b0 +"
+b0 -"
+b0 %"
+b0 '"
+b1111 z
+b1111 |
+b0 y
+b0 {
+b1111 t
+b1111 v
+b0 s
+b0 u
+b1101 l
+b1101 n
+b1111 e
+b1111 g
+b0 d
+b0 f
+b1 3
+b1 6
+b1 '
+b1 *
+#20000
+b11 @
+b11 K
+b10 ?
+b10 L
+b101 i
+b101 p
+b111 j
+b111 o
+b10 J
+b11 "
+b11 +
+b10 !
+b10 ,
+b1110 l
+b1110 n
+b10 3
+b10 6
+b10 '
+b10 *
+#30000
+b0 @
+b0 K
+b0 i
+b0 p
+b101 j
+b101 o
+b0 q
+b0 .
+b0 C
+b11 J
+b0 "
+b0 +
+b11 l
+b11 n
+b11 3
+b11 6
+b11 '
+b11 *
+#40000
+b0 ?
+b0 L
+b1111 .
+b1111 C
+b100 J
+1#
+b0 !
+b0 ,
+b100 3
+b100 6
+b0 '
+b0 *
+1&
+#50000
+b0 .
+b0 C
+b101 J
+b101 3
+b101 6
+#60000
+b101 .
+b101 C
+b110 J
+b110 3
+b110 6
+#70000
+b1000 -
+b1000 D
+b10 .
+b10 C
+b111 J
+b111 3
+b111 6
+#80000
+b1111 ?
+b1111 L
+b1111 .
+b1111 C
+b0 -
+b0 D
+b0 J
+b1000 3
+b1000 6
+#90000
+1/
+b0 .
+b0 C
+1A
+b0 ?
+b0 L
+12
+#100000
+b101 .
+b101 C
+0/
+b1 J
+b101 ?
+b101 L
+0A
+b1001 3
+b1001 6
+02
+#110000
+b11 -
+b11 D
+b10 .
+b10 C
+b11 @
+b11 K
+b10 ?
+b10 L
+b10 J
+b1010 3
+b1010 6
+#120000
+b0 @
+b0 K
+b0 -
+b0 D
+b11 J
+b1011 3
+b1011 6
+#130000
