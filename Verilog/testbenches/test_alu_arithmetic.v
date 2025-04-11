@@ -40,6 +40,8 @@ module test_alu_arithmetic;
         // Test Addition with caryy_in = 1
         carry_in = 1'b1; opcode = 3'b000; #10;
 
+        #10;#10;#10;#10;#10;#10;#10;#10;
+
         $finish;
     end
 endmodule

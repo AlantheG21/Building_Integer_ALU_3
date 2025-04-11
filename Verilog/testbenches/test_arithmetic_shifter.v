@@ -23,7 +23,7 @@ module test_arithmetic_shifter;
 
         //Test 4: Right shift 1, fill 0
         B = 4'b0011; #10;
-        #10;
+        #10;#10;#10;#10;#10;#10;#10;#10;#10;
 
         $finish;
     end
